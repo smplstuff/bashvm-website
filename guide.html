@@ -233,6 +233,37 @@
              </details>
             <!-- Port Forwarding -->
         <br><br>
+            <!-- VNC / Console -->
+            <details>
+                <summary>VNC / Console</summary>
+                <br>
+
+                <details>
+                   <summary>Adding / Removing VNC</summary>
+                   <br>
+                       <p>When accessing through VNC there is no user / password</p>
+                       <p>See example below for adding or removing vnc access</p>
+                       <p><img src="guide.d/screen8.0.0.png" alt=""></p>
+                </details>
+                <br>
+                <details>
+                    <summary>Console Access</summary>
+                    <br>
+                        <p>Manually created vm's will not have console access by default</p>
+                        <p>On the vm os you can ethier use the console service or grub entry as followed</p>
+                        <br>
+                        <p>systemctl service</p>
+                        <p>systemctl enable --now serial-getty@ttyS0.service</p>
+                        <p><img src="guide.d/screen8.0.1.png" alt=""></p>
+                        <br>
+                        <p>grub entry "/etc/default/grub"</p>
+                        <p>GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0,115200n8"</p>
+                        <p><img src="guide.d/screen8.0.2.png" alt=""></p>
+                 </details>
+             </details>
+             <!-- VNC / Console -->
+        <br><br>
+        
 
         </div>
     </div>
