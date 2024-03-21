@@ -209,10 +209,20 @@
                 </details>
                 <br>
                 <details>
-                    <summary>dhcpv6 configuration</summary>
+                    <summary>DHCPv6 configuration</summary>
                     <br>
-                        <p>An example configuration.</p>
+                        <p>An example configuration, For manual setup</p>
                         <p><img src="guide.d/screen3.0.1.png" alt=""></p>
+                        <p>An auto setup  will try to make an educated guess about the necessary information</p>
+                        <p><img src="guide.d/screen3.0.3.png" alt=""></p>
+                 </details>
+                 <br>
+                 <details>
+                    <summary>DHCP reservation</summary>
+                    <br>
+                        <p>For IPv4 you will need to know the vm name, mac address, network name and the new IPv4 to assign</p>
+                        <p>For IPv6 you will need to know the vm name, network name and the new IPv6 to assign</p>
+                        <p><img src="guide.d/screen3.0.2.png" alt=""></p>
                  </details>
              </details>
             <!-- Networking -->
@@ -232,7 +242,9 @@
                 </details>
              </details>
             <!-- Port Forwarding -->
+
         <br><br>
+        
             <!-- VNC / Console -->
             <details>
                 <summary>VNC / Console</summary>
@@ -250,7 +262,7 @@
                     <summary>Console Access</summary>
                     <br>
                         <p>Manually created vm's will not have console access by default</p>
-                        <p>On the vm os you can either use the console service or grub entry as followed</p>
+                        <p>On the vm os you can ethier use the console service or grub entry as followed</p>
                         <br>
                         <p>systemctl service</p>
                         <p>systemctl enable --now serial-getty@ttyS0.service</p>
