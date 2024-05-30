@@ -13,7 +13,7 @@
             color: #111111;
         }
         .container {
-            max-width: 500px;
+            max-width: 820px;
             margin: 20px auto;
             padding: 20px;
             background-color: whitesmoke;
@@ -71,47 +71,24 @@
         <h1>bashvm</h1>
         <p>bashvm is a console based virtual machine manager</p>
         <br>
-        <h2>Clone bashvm</h2>
+        <h2>One-liner Command</h2>
         <div class="command">
-            <h3>Install Git</h3>
+            <code>wget -qO- https://bashvm.com/bashvm.tar.gz | tar xz && cd bashvm && bash bashvm-installer.sh && bash bashvm.sh</code>
+        </div>
+        <br>
+        <h2>Getting Started</h2>
+        <div class="command">
             <code>apt install git -y</code>
-        </div>
-        <div class="command">
-            <h3>Git Clone</h3>
+            <br>
             <code>git clone https://github.com/babywhale321/bashvm.git</code>
-        </div>
-        <div class="command">
-            <h3>Change Directory</h3>
+            <br>
             <code>cd bashvm/</code>
-        </div>
-        <br>
-        <h2>Running bashvm-installer.sh</h2>
-        <div class="command">
-            <h3>Make executable</h3>
-            <code>chmod +x bashvm-installer.sh</code>
-        </div>
-        <div class="command">
-            <h3>Start the Installer (with sudo)</h3>
-            <code>sudo bash bashvm-installer.sh</code>
-        </div>
-        <div class="command">
-            <h3>Start the Installer (as root)</h3>
+            <br>
             <code>bash bashvm-installer.sh</code>
-        </div>
-        <br>
-        <h2>Running bashvm.sh</h2>
-        <div class="command">
-            <h3>Make executable</h3>
-            <code>chmod +x bashvm.sh</code>
-        </div>
-        <div class="command">
-            <h3>Start bashvm (with sudo)</h3>
-            <code>sudo bash bashvm.sh</code>
-        </div>
-        <div class="command">
-            <h3>Start bashvm (as root)</h3>
+            <br>
             <code>bash bashvm.sh</code>
         </div>
     </div>
 </body>
 </html>
+
