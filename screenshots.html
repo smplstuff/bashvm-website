@@ -28,7 +28,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
+<body class="bg-[#0f1218] font-sans text-gray-200">
     <nav class="nav-header fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -57,6 +57,9 @@
                             </a>
                             <a href="sponsors.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
                                 <i class="fas fa-handshake mr-2"></i>Sponsors
+                            </a>
+                            <a href="contributors.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
+                                <i class="fas fa-handshake mr-2"></i>Contributors
                             </a>
                             <a href="donate.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
                                 <i class="fas fa-donate mr-2"></i>Donate
@@ -98,6 +101,9 @@
                 <a href="sponsors.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
                     <i class="fas fa-handshake mr-2"></i>Sponsors
                 </a>
+                <a href="contributors.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-handshake mr-2"></i>Contributors
+                </a>
                 <a href="donate.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
                     <i class="fas fa-donate mr-2"></i>Donate
                 </a>
@@ -116,9 +122,9 @@
         <img id="lightbox-img" class="lightbox-content" src="" alt="Lightbox Image">
     </div>
 
-    <div class="gradient-bg min-h-screen pt-24 pb-12">
+    <div class="min-h-screen pt-24 pb-12">
         <div class="max-w-5xl mx-auto px-4 py-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-10 transform hover:shadow-2xl transition-all duration-300 card-glow">
+            <div class="bg-[#141820] rounded-2xl shadow-xl overflow-hidden mb-10 border border-gray-800 transform hover:shadow-2xl transition-all duration-300">
                 <div class="p-8 md:p-12 text-center">
                     <div class="floating mb-6 inline-block">
                         <svg class="h-16 w-16 mx-auto text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,13 +132,13 @@
                         </svg>
                     </div>
                     <h1 class="text-4xl font-bold mb-4 gradient-text">Screenshots Gallery</h1>
-                    <p class="text-xl text-gray-600 mb-8">See bashvm in action with these screenshots of the console-based interface</p>
+                    <p class="text-xl text-gray-400 mb-8">See bashvm in action with these screenshots of the console-based interface</p>
                 </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen1.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen1.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
@@ -141,8 +147,8 @@
                     <img src="screenshots.d/screen1.webp" alt="Virtual Machines Screenshot" class="rounded-lg shadow-md w-full transition-transform hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen2.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen2.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                         </svg>
@@ -151,8 +157,8 @@
                     <img src="screenshots.d/screen2.webp" alt="Storage Pools Screenshot" class="rounded-lg shadow-md w-full hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen3.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen3.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
@@ -161,8 +167,8 @@
                     <img src="screenshots.d/screen3.webp" alt="Networking Screenshot" class="rounded-lg shadow-md w-full hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen4.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen4.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                         </svg>
@@ -171,8 +177,8 @@
                     <img src="screenshots.d/screen4.webp" alt="Snapshots Screenshot" class="rounded-lg shadow-md w-full hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen5.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen5.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
@@ -181,8 +187,8 @@
                     <img src="screenshots.d/screen5.webp" alt="Edit XML Screenshot" class="rounded-lg shadow-md w-full hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen6.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen6.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
@@ -191,8 +197,8 @@
                     <img src="screenshots.d/screen6.webp" alt="Firewall Settings Screenshot" class="rounded-lg shadow-md w-full hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen7.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen7.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
                         </svg>
@@ -201,8 +207,8 @@
                     <img src="screenshots.d/screen7.webp" alt="Port Forwarding Screenshot" class="rounded-lg shadow-md w-full hover:shadow-lg">
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-md hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen8.webp')">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700 flex items-center">
+                <div class="bg-[#141820] p-6 rounded-xl shadow-md border border-gray-800 hover-scale cursor-pointer" onclick="openLightbox('screenshots.d/screen8.webp')">
+                    <h2 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
                         <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
