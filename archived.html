@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="header.js"></script>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
+<body class="bg-[#0f1218] font-sans text-gray-200">
     <nav class="nav-header fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -38,6 +38,9 @@
                             </a>
                             <a href="sponsors.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
                                 <i class="fas fa-handshake mr-2"></i>Sponsors
+                            </a>
+                            <a href="contributors.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
+                                <i class="fas fa-handshake mr-2"></i>Contributors
                             </a>
                             <a href="donate.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
                                 <i class="fas fa-donate mr-2"></i>Donate
@@ -79,6 +82,9 @@
                 <a href="sponsors.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
                     <i class="fas fa-handshake mr-2"></i>Sponsors
                 </a>
+                <a href="contributors.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-handshake mr-2"></i>Contributors
+                </a>
                 <a href="donate.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
                     <i class="fas fa-donate mr-2"></i>Donate
                 </a>
@@ -93,9 +99,9 @@
         document.addEventListener('DOMContentLoaded', initHeader);
     </script>
 
-    <div class="gradient-bg min-h-screen pt-24 pb-12">
+    <div class="min-h-screen pt-24 pb-12">
         <div class="max-w-4xl mx-auto px-4 py-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300 card-glow">
+            <div class="bg-[#141820] rounded-2xl shadow-xl overflow-hidden border border-gray-800 transform hover:shadow-2xl transition-all duration-300">
                 <div class="p-8 md:p-12 text-center">
                     <svg class="h-16 w-16 mx-auto text-purple-500 mb-6 floating" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
@@ -103,11 +109,12 @@
                     
                     <h1 class="text-4xl font-bold mb-4 gradient-text">Archived Versions</h1>
                     <p class="text-xl text-gray-600 mb-8">Previous releases of bashvm</p>
-
-                    <div id="archive-list" class="space-y-4">
-                        <div class="text-gray-500">Loading archives...</div>
-                    </div>
                 </div>
+            </div>
+            
+            <div id="archive-list" class="space-y-4 mt-8">
+                <!-- Archive items will be injected here dynamically with version names -->
+                <div class="text-gray-500">Loading archives...</div>
             </div>
         </div>
     </div>
@@ -136,12 +143,12 @@
                         const tarUrl = `https://raw.githubusercontent.com/babywhale321/bashvm-website/main/archive/${archive.name}/bashvm.tar.gz`;
 
                         const archiveElement = document.createElement('div');
-                        archiveElement.className = 'bg-gray-50 p-4 rounded-lg hover-scale transition-all';
+                        archiveElement.className = 'bg-[#141820] p-4 rounded-lg hover:bg-[#1a1f2a] border border-gray-800 transition-all';
                         archiveElement.innerHTML = `
                             <div class="flex items-center justify-between">
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-gray-800">${formattedDate}</h3>
-                                    <p class="text-sm text-gray-600">Version: ${archive.name}</p>
+                                    <h3 class="font-semibold text-white">${formattedDate}</h3>
+                                    <p class="text-sm text-gray-400">Version: ${archive.name}</p>
                                 </div>
                                 <div class="flex gap-2">
                                     <a href="${tarUrl}" class="px-4 py-2 bg-green-100 text-green-800 rounded-md hover:bg-green-200 transition-colors">
