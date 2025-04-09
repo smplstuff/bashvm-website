@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="header.js"></script>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
+<body class="bg-[#0f1218] font-sans text-gray-200">
     <nav class="nav-header fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -38,6 +38,9 @@
                             </a>
                             <a href="sponsors.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
                                 <i class="fas fa-handshake mr-2"></i>Sponsors
+                            </a>
+                            <a href="contributors.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
+                                <i class="fas fa-handshake mr-2"></i>Contributors
                             </a>
                             <a href="donate.html" class="nav-item text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300">
                                 <i class="fas fa-donate mr-2"></i>Donate
@@ -79,6 +82,9 @@
                 <a href="sponsors.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
                     <i class="fas fa-handshake mr-2"></i>Sponsors
                 </a>
+                <a href="contributors.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-handshake mr-2"></i>Contributors
+                </a>
                 <a href="donate.html" class="nav-item text-white block px-3 py-2 rounded-md text-base font-medium">
                     <i class="fas fa-donate mr-2"></i>Donate
                 </a>
@@ -92,10 +98,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', initHeader);
     </script>
-    
-    <div class="gradient-bg min-h-screen pt-24 pb-12">
+
+    <div class="min-h-screen pt-24 pb-12">
         <div class="max-w-4xl mx-auto px-4 py-12">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:shadow-2xl transition-all duration-300 card-glow">
+            <div class="bg-[#141820] rounded-2xl shadow-xl overflow-hidden border border-gray-800 transform hover:shadow-2xl transition-all duration-300">
                 <div class="p-8 md:p-12 text-center">
                     <div class="floating mb-6 inline-block">
                         <svg class="h-16 w-16 mx-auto text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,8 +109,8 @@
                         </svg>
                     </div>
                     <h1 class="text-4xl font-bold mb-4 gradient-text">Support the Project</h1>
-                    <p class="text-xl text-gray-600 mb-8">Your contributions help us continue developing and improving bashvm</p>
-                    
+                    <p class="text-xl text-gray-400 mb-8">Your contributions help us continue developing and improving bashvm</p>
+
                     <div class="pulse-animation mt-8">
                         <a href="https://www.paypal.com/paypalme/babywhale123" 
                            class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
